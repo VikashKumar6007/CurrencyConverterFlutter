@@ -103,6 +103,7 @@ class _CurrencyInputCardWidgetState extends State<CurrencyInputCardWidget> {
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.transparent,
+      isScrollControlled: true,
       builder: (ctx) => _CurrencyPickerSheet(
         selectedCurrency: widget.currency,
         currencies: _availableCurrencies,
